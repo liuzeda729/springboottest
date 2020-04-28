@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" th:src="@{js/jquery.min.js}"></script>
+<script type="text/javascript">
+	$(function(){
+		$.post(
+			"[[@{/getall}]]",
+			null,
+			function(data){
+				alert(data);
+				console.log(data);
+			});
+	});
+</script>
+</head>
+<body>
+/templates/index.html<br>
+
+</body>
+</html>
